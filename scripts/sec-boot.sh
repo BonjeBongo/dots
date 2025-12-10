@@ -16,5 +16,22 @@ cat << EOF | tee /etc/dracut.conf/myflags.conf
 add_dracutmodules+=" plymouth "
 EOF
 
+cat << EOF | tee /etc/pacman.d/hooks/80-secureboot.hook
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Type = Path
+Target = usr/lib/systemd/boot/efi/systemd-boot*.efi
+
+[Action]
+Description = Signing systemd-boot EFI binary for Secure Boot
+When = PostTransaction
+Exec = /bin/sh -c 'while read -r f; do /usr/lib/systemd/systemd-sbsign sign --private-key /path/to/keyfile.key --certificate /path/to/certificate.crt --output "${f}.signed" "$f"; done;'
+Depends = sh
+NeedsTargets
+
+EOF
+
+
 dracut -f --regenerate-all
 racut -f --add-confdir rescue /boot/initramfs-linux-fallback.img
