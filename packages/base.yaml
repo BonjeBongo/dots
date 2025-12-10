@@ -15,11 +15,9 @@ packages:
   - flatpak
   - icon-browser-git
   - dkms
-  - efitools
-  - sbctl
+  # apps
   - network-manager-applet
   - blueman
-  # apps
   - gnome-disk-utility
   - lact
   - diskonaut

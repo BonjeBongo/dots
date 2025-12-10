@@ -1,0 +1,14 @@
+description: Setup Secure boot and dracut
+
+# List of packages in this module
+packages:
+  - efitools
+  - dracut
+  - dracut-ukify
+  - systemd-ukify
+  - sbctl
+# Modules that conflict with this one
+conflicts: []
+
+# Script to run after installing packages (optional)
+post_install_hook: "scripts/sec-boot.sh"

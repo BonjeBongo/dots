@@ -1,0 +1,60 @@
+{
+  "linuxWallpaperEngine": {
+    "enabled": true,
+    "monitorScenes": {
+      "DP-1": "2359043440",
+      "HDMI-A-1": "3404409289"
+    },
+    "sceneSettings": {
+      "970357247": {
+        "fps": 60
+      },
+      "1297497116": {
+        "scaling": "stretch"
+      },
+      "2246208713": {
+        "scaling": "stretch"
+      },
+      "2504353624": {
+        "scaling": "default"
+      },
+      "2518958708": {
+        "scaling": "fit"
+      },
+      "2894622859": {
+        "scaling": "fill"
+      },
+      "2938747420": {
+        "fps": 37,
+        "scaling": "default"
+      },
+      "3404409289": {
+        "scaling": "fill"
+      },
+      "3419679793": {
+        "fps": 29
+      }
+    }
+  },
+  "grimblast": {
+    "enabled": true
+  },
+  "dankActions": {
+    "enabled": true,
+    "variants": [
+      {
+        "icon": "network",
+        "displayText": "",
+        "displayCommand": "nm-applet --indicator",
+        "clickCommand": "",
+        "middleClickCommand": "",
+        "rightClickCommand": "",
+        "updateInterval": 0,
+        "showIcon": true,
+        "showText": true,
+        "id": "variant_1765331412440",
+        "name": "NM Applet"
+      }
+    ]
+  }
+}
