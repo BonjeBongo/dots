@@ -7,6 +7,7 @@ packages:
   # Essential base system
   - base
   - base-devel
+  - tree
   - git
   - github-cli
   - lazygit

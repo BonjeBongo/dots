@@ -16,4 +16,4 @@ cat << EOF | tee /etc/dracut.conf.d/myflags.conf
 add_dracutmodules+=" plymouth "
 EOF
 
-reinstall-kernels
+dracut-ukify -a
