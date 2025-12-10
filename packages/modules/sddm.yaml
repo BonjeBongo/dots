@@ -1,0 +1,13 @@
+description: SDDM Settings
+
+# List of packages in this module
+packages:
+  - qt6-svg
+  - qt6-virtualkeyboard
+  - qt6-multimedia-ffmpeg
+
+# Modules that conflict with this one
+conflicts: []
+
+# Script to run after installing packages (optional)
+post_install_hook: "scripts/sddm.sh"

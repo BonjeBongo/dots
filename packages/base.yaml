@@ -1,0 +1,30 @@
+# Base packages installed on all systems
+# These packages are included regardless of host or modules
+
+description: Base system packages
+
+packages:
+  # Essential base system
+  - base
+  - base-devel
+  - git
+  - github-cli
+  - lazygit
+  - vim
+  - neovim
+  - flatpak
+  - icon-browser-git
+  - dkms
+  - efitools
+  - sbctl
+  - network-manager-applet
+  - blueman
+  # apps
+  - gnome-disk-utility
+  - lact
+  - diskonaut
+  - zen-browser-bin
+  - alacritty
+  - gnome-software
+  - flatpak:com.github.tchx84.Flatseal
+  - flatpak:io.missioncenter.MissionCenter

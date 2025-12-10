@@ -1,0 +1,11 @@
+description: Yazi
+
+# List of packages in this module
+packages:
+  - yazi
+
+# Modules that conflict with this one
+conflicts: []
+
+# Script to run after installing packages (optional)
+post_install_hook: "scripts/yazi.sh"

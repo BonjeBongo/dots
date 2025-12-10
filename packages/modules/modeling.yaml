@@ -1,0 +1,11 @@
+description: 3D Printing
+
+# List of packages in this module
+packages:
+  - blender
+
+# Modules that conflict with this one
+conflicts: []
+
+# Script to run after installing packages (optional)
+post_install_hook: ""

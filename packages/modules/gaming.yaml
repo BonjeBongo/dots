@@ -1,0 +1,27 @@
+description: Gaming
+
+# List of packages in this module
+packages:
+  - flatpak:org.equicord.equibop
+  - gamescope
+  - mangohud
+  - gamemode
+  - lact
+  - coolercontrold
+  - coolercontrol
+  # steamtinkerlaunch dependencies
+  - yad
+  - xdotool
+  - xorg-xwininfo
+  - steam
+  - flatpak:com.vysp3r.ProtonPlus
+  - flatpak:com.github.Matoking.protontricks
+  - flatpak:com.steamgriddb.SGDBoop
+  - flatpak:io.github.Foldex.AdwSteamGtk
+  - flatpak:com.heroicgameslauncher.hgl
+
+# Modules that conflict with this one
+conflicts: []
+
+# Script to run after installing packages (optional)
+post_install_hook: "scripts/gaming.sh"

@@ -1,0 +1,27 @@
+description: DankMaterial Shell
+
+# List of packages in this module
+packages:
+  - quickshell
+  - cava
+  - cliphist
+  - wl-clipboard
+  - dgop
+  - dsearch-bin
+  - matugen
+  - qt6-multimedia
+  - adw-gtk-theme
+  - qt6ct-kde
+  - mate-polkit
+  - grim
+  - slurp
+  - grimblast-git
+  - hyprpicker
+  - linux-wallpaperengine-git
+  - dms-shell-bin
+
+# Modules that conflict with this one
+conflicts: []
+
+# Script to run after installing packages (optional)
+post_install_hook: "scripts/dms.sh"

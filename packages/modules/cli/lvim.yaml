@@ -1,0 +1,10 @@
+description: lvim install script
+
+# List of packages in this module
+packages: []
+
+# Modules that conflict with this one
+conflicts: []
+
+# Script to run after installing packages (optional)
+post_install_hook: "scripts/lvim.sh"

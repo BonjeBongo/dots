@@ -1,0 +1,12 @@
+description: SDDM Settings
+
+# List of packages in this module
+packages:
+  - game-devices-udev
+  - dualsensectl-git
+  
+# Modules that conflict with this one
+conflicts: []
+
+# Script to run after installing packages (optional)
+post_install_hook: "scripts/dualsense.sh"
