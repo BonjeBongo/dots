@@ -134,7 +134,6 @@ packages:
 - meld
 - mesa-utils
 - micro
-# - mkinitcpio
 - modemmanager
 - mtools
 - nano
