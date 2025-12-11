@@ -28,3 +28,4 @@ packages:
   - gnome-software
   - flatpak:com.github.tchx84.Flatseal
   - flatpak:io.missioncenter.MissionCenter
+  - flatpak:com.protonvpn.www
