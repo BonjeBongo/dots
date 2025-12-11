@@ -10,4 +10,7 @@ ln -s "$ACTUAL_HOME/$DCLI_DOTS/hypr" "$ACTUAL_HOME/$HYPR_DOTS"
 rm -rf "$ACTUAL_HOME/$DMS_DOTS"
 ln -s "$ACTUAL_HOME/$DCLI_DOTS/DankMaterialShell" "$ACTUAL_HOME/$DMS_DOTS"
 
+rm -rf "$ACTUAL_HOME/.config/paru"
+ln -s "$ACTUAL_HOME/$DCLI_DOTS/paru" "$ACTUAL_HOME/.config/paru"
+
 sudo systemctl enable --now dms
