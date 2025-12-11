@@ -5,15 +5,17 @@ cp -r EFI/Microsoft /boot/EFI/
 
 sbctl create-keys
 sbctl enroll-keys --microsoft
-#cachy os specific
-sbctl-batch-sign
-#
-sbctl sign -s -o \
-  /usr/lib/systemd/boot/efi/systemd-bootx64.efi.signed \
-  /usr/lib/systemd/boot/efi/systemd-bootx64.efi
+
 
 cat << EOF | tee /etc/dracut.conf.d/myflags.conf
 add_dracutmodules+=" plymouth "
 EOF
 sbctl verify | sed -E 's|^.* (/.+) is not signed$|sbctl sign -s "\1"|e'
 dracut-ukify -a
+
+#cachy os specific
+sbctl-batch-sign
+#
+sbctl sign -s -o \
+  /usr/lib/systemd/boot/efi/systemd-bootx64.efi.signed \
+  /usr/lib/systemd/boot/efi/systemd-bootx64.efi
