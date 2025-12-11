@@ -15,5 +15,5 @@ sbctl sign -s -o \
 cat << EOF | tee /etc/dracut.conf.d/myflags.conf
 add_dracutmodules+=" plymouth "
 EOF
-
+sbctl verify | sed -E 's|^.* (/.+) is not signed$|sbctl sign -s "\1"|e'
 dracut-ukify -a

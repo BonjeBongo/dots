@@ -21,6 +21,7 @@ packages:
   - blueman
   - gnome-disk-utility
   - lact
+  - satty
   - diskonaut
   - zen-browser-bin
   - alacritty

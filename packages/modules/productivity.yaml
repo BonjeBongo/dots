@@ -3,6 +3,11 @@ description: 3D Printing
 # List of packages in this module
 packages:
   - blender
+  - krita
+  - orca-slicer-bin
+  - flatpak:io.github.MakovWait.Godots
+  - flatpak:org.deluge_torrent.deluge
+  - flatpak:org.onlyoffice.desktopeditors
 
 # Modules that conflict with this one
 conflicts: []

@@ -18,6 +18,7 @@ packages:
   - flatpak:com.github.Matoking.protontricks
   - flatpak:com.steamgriddb.SGDBoop
   - flatpak:io.github.Foldex.AdwSteamGtk
+  - flatpak:io.github.tralph3.Steam_Metadata_Editor
   - flatpak:com.heroicgameslauncher.hgl
 
 # Modules that conflict with this one
