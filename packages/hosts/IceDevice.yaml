@@ -240,8 +240,7 @@ packages:
 - xorg-xrandr
 - xorg-xwayland
 - xsettingsd
-- zen-browser-bin
 exclude: []
 conflicts: []
-post_install_hook: null
+post_install_hook: "scripts/hosts/IceDevice.sh"
 hook_behavior: ask
