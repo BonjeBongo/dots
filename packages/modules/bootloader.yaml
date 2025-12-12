@@ -2,6 +2,8 @@ description: Setup Secure boot and dracut
 
 # List of packages in this module
 packages:
+  - sbsigntools
+  - edk2-shell
   - efitools
   - dracut
   - dracut-ukify

@@ -4,7 +4,9 @@
 
 description: Chaotic AUR repository - pre-built AUR packages for faster installation
 
-packages: []
+packages:
+  - chaotic-keyring
+  - chaotic-mirrorlist
 
 conflicts: []
 post_install_hook: scripts/chaotic-aur.sh
