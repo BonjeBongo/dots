@@ -1,5 +1,7 @@
 cp /usr/share/edk2-shell/x64/Shell.efi /boot/shellx64.efi
-cat << EOF | tee -a /boot/loader/loader.conf
+cat << EOF | tee /boot/loader/loader.conf
+timeout 3
+default @saved
 console-mode max
 EOF
 

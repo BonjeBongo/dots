@@ -226,7 +226,7 @@
   "powerMenuDefaultAction": "poweroff",
   "powerMenuGridLayout": true,
   "customPowerActionLock": "",
-  "customPowerActionLogout": "loginctl kill-user $(whoami)",
+  "customPowerActionLogout": "uwsm stop; loginctl terminate-user \"\"",
   "customPowerActionSuspend": "",
   "customPowerActionHibernate": "",
   "customPowerActionReboot": "",
