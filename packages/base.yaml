@@ -5,6 +5,8 @@ description: Base system packages
 
 packages:
   # Essential base system
+  - linux-zen
+  - linux-zen-headers
   - base
   - base-devel
   - tree
