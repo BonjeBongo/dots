@@ -227,7 +227,7 @@
   "powerMenuDefaultAction": "poweroff",
   "powerMenuGridLayout": true,
   "customPowerActionLock": "",
-  "customPowerActionLogout": "uwsm stop",
+  "customPowerActionLogout": "hyprctl dispatch exit; loginctl terminate-session \"$XDG_SESSION_ID\"; loginctl terminate-user \"\"; systemctl --user stop wayland-wm@*.service; uwsm stop",
   "customPowerActionSuspend": "",
   "customPowerActionHibernate": "",
   "customPowerActionReboot": "",

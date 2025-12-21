@@ -22,8 +22,19 @@ DisplayServer=x11
 EnableHiDPI=true
 DisplayCommand=/usr/share/sddm/scripts/Xsetup
 DisplayStopCommand=/usr/share/sddm/scripts/Xstop
-
 EOF
+
+# i want only one display to show login screen, fight me
+cat << EOF | tee -a /usr/share/sddm/scripts/Xsetup
+xrandr --output HDMI-A-1 --off
+xrandr --output HDMI-A-0 --off
+EOF
+# idk if this works uwsm is kinda ass
+# but it shipped with cachy so here we are
+cat << EOF | tee -a /usr/share/sddm/scripts/Xstop
+systemctl restart sddm.service
+EOF
+
 
 ACTUAL_USER="${SUDO_USER:-$USER}"
 ACTUAL_HOME=$(sudo -i -u $ACTUAL_USER echo "\$HOME")
