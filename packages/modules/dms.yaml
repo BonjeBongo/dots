@@ -2,7 +2,7 @@ description: DankMaterial Shell
 
 # List of packages in this module
 packages:
-  - quickshell
+  - quickshell-git
   - cava
   - cliphist
   - wl-clipboard
