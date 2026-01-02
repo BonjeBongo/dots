@@ -43,3 +43,7 @@ DCLI_DOTS='.config/arch-config/dots'
 ln -s "$ACTUAL_HOME/$DCLI_DOTS/hosts/IceDevice/wireplumber" \
   "$ACTUAL_HOME/.config/wireplumber"
 systemctl --user restart wireplumber.service
+
+ufw allow 53317/tcp
+ufw allow 53317/udp
+ufw reload 

@@ -19,6 +19,10 @@ packages:
   - icon-browser-git
   - dkms
   # apps
+  - localsend
+  # - telegram-desktop # bad signature in cachy repo
+  - 7zip
+  - feh
   - network-manager-applet
   - blueman
   - gnome-disk-utility
@@ -26,6 +30,7 @@ packages:
   - satty
   - diskonaut
   - zen-browser-bin
+  - brave-bin
   - alacritty
   - gnome-software
   - flatpak:com.github.tchx84.Flatseal
