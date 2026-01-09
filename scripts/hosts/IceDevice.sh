@@ -44,6 +44,10 @@ ln -s "$ACTUAL_HOME/$DCLI_DOTS/hosts/IceDevice/wireplumber" \
   "$ACTUAL_HOME/.config/wireplumber"
 systemctl --user restart wireplumber.service
 
+# localsend
 ufw allow 53317/tcp
 ufw allow 53317/udp
+# wallpaper engine
+sudo ufw allow 7889/tcp
+sudo ufw allow 7884/udp
 ufw reload 

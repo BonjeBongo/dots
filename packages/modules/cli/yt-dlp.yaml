@@ -1,0 +1,11 @@
+description: yt-dlp
+
+# List of packages in this module
+packages:
+  - yt-dlp
+
+# Modules that conflict with this one
+conflicts: []
+
+# Script to run after installing packages (optional)
+post_install_hook: "scripts/yt-dlp.sh"
