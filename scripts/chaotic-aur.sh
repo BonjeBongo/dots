@@ -33,6 +33,9 @@ fi
 
 echo -e "${BLUE}Importing Chaotic AUR keys...${NC}"
 
+# 1password gpg
+curl -sS https://downloads.1password.com/linux/keys/1password.asc | gpg --import
+
 # Retrieve and sign the primary key
 pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com
 pacman-key --lsign-key 3056513887B78AEB

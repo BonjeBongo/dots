@@ -20,6 +20,7 @@ packages:
   - dkms
   # apps
   - localsend
+  - 1password
   # - telegram-desktop # bad signature in cachy repo
   - 7zip
   - feh
